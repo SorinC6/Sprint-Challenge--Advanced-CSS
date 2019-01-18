@@ -170,11 +170,18 @@ p {
   flex-direction: column;
   background: #F6F6F6;
   color: #454A59;
+  position: sticky;
+  top: 0;
 }
 .nav-content h1 {
   margin: 0 auto;
   padding: 10px;
   font-size: 40px;
+}
+.nav-content h1:hover {
+  color: red;
+  -webkit-animation: flip-scale-2-hor-top 0.5s linear both;
+  animation: flip-scale-2-hor-top 0.5s linear both;
 }
 .nav-content nav {
   margin: 0 auto;
@@ -184,8 +191,7 @@ p {
   padding: 20px;
   text-decoration: none;
   color: #454A59;
-  font-size: 1.4rem;
-  font-family: 'Lato', sans-serif;
+  font-size: 1.2rem;
 }
 footer {
   color: #22283B;
