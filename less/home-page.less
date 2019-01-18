@@ -1,7 +1,7 @@
 // Home Content
 .container {
     @media (max-width: 500px) {
-        max-width: 98%;
+        max-width: 95%;
         margin: 0 auto;
     }
 }
@@ -56,17 +56,20 @@
         padding: 50px 60px;
         display: flex;
         justify-content: center;
-        @media (max-width: 500px) {
+        @media @mobile {
             max-width:100%;
             margin: 0px;
             padding: 0px;
             display: flex;
             flex-direction: column-reverse;
+            justify-content: center;
         }
         .walk-text {
             width: 50%;
-            @media (max-width: 500px) {
+            @media @mobile {
                 width:98%;
+                margin:0 auto;
+                padding-top:20px;   
                 
             }
             h3 {
@@ -77,8 +80,8 @@
             }
             .btn {
                 .btn-style(1px, 12px);
-                @media (max-width: 500px) {
-                    width:95%;
+                @media @mobile {
+                    width:100%;
                     margin: 0 auto;
                     padding: 25px 0px;
                     margin-bottom: 20px;
@@ -92,10 +95,10 @@
         .walk-img {
             width: 46%;
             margin-left: 4%;
-            @media (max-width: 500px) {
-                //margin:0 auto;
+            @media @mobile {
+                margin:0 auto;
                 width:98%;
-                margin-left: 0px;
+                padding-top:20px;
             }
             img {
                 width: 100%;
