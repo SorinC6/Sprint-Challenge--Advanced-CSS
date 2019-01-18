@@ -1,0 +1,24 @@
+// Mixins Here
+//function for auto center an element and adding specific padding
+.mixin-mp(@pad) {
+    margin: 0 auto;
+    padding: @pad;
+}
+
+//function for display the direction of a element with flexbox
+.just-flex(@direction) {
+    display: flex;
+    flex-direction: @direction;
+}
+
+//mixin for buttons - with parameters for the width of the border and padding
+.btn-style(@radius,@pad){
+    border:@radius solid black;
+    width:100px;
+    padding:@pad; 
+    text-align: center;
+    border-radius: 5px;
+    background-color: @btn-bg-color; 
+    color:white;  
+    font-size:15px;
+}
