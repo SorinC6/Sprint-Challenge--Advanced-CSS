@@ -1,6 +1,18 @@
 // Home Content
+.container {
+    @media (max-width: 500px) {
+        max-width: 98%;
+        margin: 0 auto;
+    }
+}
 .home {
     .intro {
+        .header-img {
+            max-width: 100%; 
+            @media (max-width: 500px) {
+                border-radius: 10px;
+            }
+        }
         h2 {
             padding: 15px;
         }
@@ -45,7 +57,7 @@
             .btn {
                 .btn-style(1px, 12px);
                 &:hover {
-                    background-color: white;
+                    background-color:@wild-sand;
                     color: @btn-bg-color;
                 }
             }
