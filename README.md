@@ -34,13 +34,31 @@ Edit this document to include your answers after each question. Make sure to lea
 
 1. What is the difference between an adaptive website and a fully responsive website?
 
+Responsive: it's providing a optimal viewing experience - it works no matter what the screen size is  ...no matter how much you resize the screen the layout will automatically respond to that size;
+
+Adaptive design its diffrent from responsive because there isn't one layout that allways changes. There are several layouts for diffrent types of screens (mobile/tablet) - the layout we use depends on the device screen size.
+
+
 2. Describe what it means to be mobile first vs desktop first.
+
+Mobile first means that we will start develop a web app starting with mobile view and then extend the view port to tablet..desktop . It means that we will use @media (min-width:500px) ex - for mobile we start with min-width
+
+Desktop its like a reverse thing - We start with the web page first and then we go to tablet/mobile - using media queries max-width ex: @media (max-width:900px)
 
 3. What does `font-size: 62.5%` in the `html` tag do for us when using `rem` units?
 
+This font size is a solution for percentage problem. It's easier working with rems 
+The defaul size of a browser is 16px, at font size 100% - 1 rem is 16px. A easier way to deal with this is to set font size : 62.5% - beacause 62.5% of 16px is 10px witch makes much easier any use of rem . For exemple 1rem=10px , 58px=5.6rem so on.. :)
+
 4. How would you describe preprocessing to someone new to CSS?
 
+A prerocessing its a program that allow you to generate css. Preprocessor will add features that don't exists in Css like:mixin, nesting..
+
 5. What is your favorite concept in preprocessing? What is the concept that gives you the most trouble?
+
+I think nesting elements are the best thing beacuse it's easier to write clean and dry code, mixins are a great concepts for congiguration of buttons , and variabiles for changing you color and fonts in yous site 
+
+I think importing every section of the site (nav,index,content,footer) its not nessesary in a small project but I see the advanatages in a large one.
 
 You are expected to be able to answer all these questions. Your responses contribute to your Sprint Challenge grade. Skipping this section *will* prevent you from passing this challenge.
 
